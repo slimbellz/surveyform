@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">feedback form</h1>
+        <p id="description">Client satisfaction survey. Improving is our motto, let us know how satisfy you better.
+            Our focus include creating communities outside our site for people to connect with us, our products, and others within the community. Ultimately, this ‘outside' focus will direct us in the right direction of growth needed to expand and serve our clients better.        
+        </p>
+        <form id="survey-form">
+            <div class="insert-wrapper">
+                <div class="wrapper">
+                    <label id="name-label">First Name:</label>
+                    <input id="name" type="text" placeholder="First Name" required>
+                </div>
+                <div class="wrapper">
+                    <label id="name-label">Last Name:</label>
+                    <input id="name" type="text" placeholder="Last Name" required>
+                </div>
+                <div class="wrapper">
+                    <label id="email-label">Email:</label>
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="wrapper">
+                    <label id="tel-label">Tel.</label>
+                    <input id="tel" type="tel" placeholder="Telephone">
+                </div>
+                <div class="wrapper">
+                    <label id="number-label">Number(1-100)</label>
+                    <input id="number" type="number" placeholder="Number" min="1" max="100">
+                </div>
+            </div>
+            <label for="accessary">Select Jewelry types:</label>
+            <select id="dropdown">
+                <option value="">--Please choose an option--</option>
+                <option value="pendant">Pendant</option>
+                <option value="earing">Earing</option>
+                <option value="necklace">Necklace</option>
+                <option value="bracelets">Bracelets</option>
+                <option value="ankle-chain">Ankle-Chain</option>
+                <option value="rings">Rings</option>
+            </select><br>
+            
+            <div id="input-wrapper">
+                <label for="pick">Will you recommend us to a friend</label>
+                <input type="radio" name="recommend" value="yes">
+                <label>Yes, I would</label><br>
+                <input type="radio" name="recommend" value="somewhat">
+                <label>Maybe</label><br>
+                <input type="radio" name="recommend" value="no">
+                <label>No, I will not</label><br>
+            </div>
+            <div id="input-wrapper">
+                <label for="tick">Our strength</label>
+                <input type="checkbox" name="response1" value="prices" checked>
+                <label>Prices</label>
+                <input type="checkbox" name="response2" value="reception">
+                <label>Reception</label>
+                <input type="checkbox" name="response3" value="quality">
+                <label>Quality</label>
+                <input type="checkbox" name="response4" value="online-purchase">
+                <label>Online purchase</label><br>
+            </div>    
+                <label for="story">Tell us your experience:</label>
+                <textarea id="story" name="story" rows="5" cols="30">...</textarea>
+                
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </form>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
